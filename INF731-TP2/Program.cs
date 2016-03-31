@@ -10,7 +10,6 @@ namespace INF731_TP2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("test");
         }
     }
 }
