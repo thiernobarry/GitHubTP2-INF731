@@ -11,7 +11,6 @@ namespace INF731_TP2
         static void Main(string[] args)
         {
             Console.WriteLine("test");
-            Console.WriteLine("2eme test");
         }
     }
 }
