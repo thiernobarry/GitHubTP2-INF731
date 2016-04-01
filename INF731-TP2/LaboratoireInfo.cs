@@ -26,10 +26,15 @@ namespace INF731_TP2
             }
         }
 
-        public LaboratoireInfo(string numSalle, int nbrePersMax, int nbreTable, int nbrePosteInfo)
-            : base(numSalle, nbrePersMax, nbreTable)
+        public LaboratoireInfo(string nom, string numSalle, int nbrePersMax, int nbreTable, int nbrePosteInfo)
+            : base(nom, numSalle, nbrePersMax, nbreTable)
         {
             NbrePosteInfo = nbrePosteInfo;
+        }
+
+        public override string Afficher()
+        {
+            return base.Afficher() + " ; " + NbrePosteInfo.ToString();
         }
     }
 }

@@ -26,10 +26,15 @@ namespace INF731_TP2
             }
         }
 
-        public LaboratoireChimie(string numSalle, int nbrePersMax, int nbreTable, int nbreAireExp)
-            : base(numSalle, nbrePersMax, nbreTable)
+        public LaboratoireChimie(string nom, string numSalle, int nbrePersMax, int nbreTable, int nbreAireExp)
+            : base(nom, numSalle, nbrePersMax, nbreTable)
         {
             NbreAireExp = nbreAireExp;
+        }
+
+        public override string Afficher()
+        {
+            return base.Afficher() + " ; " + NbreAireExp.ToString();
         }
     }
 }
